@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-checkbox-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #1976d2;
+  background-color: #e3f2fd;
+}
+
+.p-checkbox-box:hover {
+  border-color: #1565c0;
+  background-color: #bbdefb;
+}
+
+.p-checkbox-icon {
+  font-size: 1rem;
+  color: #1565c0;
+}
+
+/* Hover effect for paginator page numbers */
+.p-paginator-page {
+  transition: all 0.3s ease;
+}
+
+.p-paginator-page:hover {
+  background-color: #e3f2fd; /* Light blue background */
+  color: #1565c0; /* Dark blue text */
+  cursor: pointer;
+}
+
+/* Style for the selected page */
+.p-paginator-page.p-highlight {
+  background-color: #e3f2fd; /* Same light blue background */
+  color: #1565c0; /* Same dark blue text */
+  font-weight: bold; /* Optional: Make it bold */
+}
