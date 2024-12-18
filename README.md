@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# Prime React Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic React application showcasing paginated artwork data using PrimeReact and Tailwind CSS, powered by the Art Institute of Chicago API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Dynamic Table**: Displays paginated, searchable, and selectable artwork data.
+- **Multi-Page Fetching**: Dynamically fetch additional data when more rows are requested.
+- **Row Selection**: Specify and select a given number of rows dynamically.
+- **Modern UI**: Built with PrimeReact components and styled using Tailwind CSS.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd <project-directory>
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+## Usage
+
+1. **Select Rows**:
+
+   - Click the **ChevronDown** icon in the `Title` column header.
+   - Enter the number of rows to select (e.g., `5`).
+   - Click **Submit** to select the specified rows.
+
+2. **Pagination**:
+
+   - Use the pagination controls to navigate between pages.
+   - Data is fetched dynamically as needed.
+
+3. **Deployed Link**:
+   - Access the deployed application here: [Deployed App Link](#)
+
+---
+
+## Technologies Used
+
+- **React + Vite**
+- **PrimeReact**
+- **Tailwind CSS**
+- **Art Institute of Chicago API**
+
+---
+
+## API Details
+
+**Endpoint**:
+
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+https://api.artic.edu/api/v1/artworks
 ```
