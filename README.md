@@ -55,7 +55,7 @@ A dynamic React application showcasing paginated artwork data using PrimeReact a
    - Data is fetched dynamically as needed.
 
 3. **Deployed Link**:
-   - Access the deployed application here: https://artworks-table.netlify.app/(#)
+   - Access the deployed application here: https://artworks-table.netlify.app/
 
 ---
 
