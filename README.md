@@ -1,4 +1,4 @@
-# Prime React Table
+# Artworks Table
 
 A dynamic React application showcasing paginated artwork data using PrimeReact and Tailwind CSS, powered by the Art Institute of Chicago API.
 
@@ -36,7 +36,7 @@ A dynamic React application showcasing paginated artwork data using PrimeReact a
    ```
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ---
@@ -55,13 +55,13 @@ A dynamic React application showcasing paginated artwork data using PrimeReact a
    - Data is fetched dynamically as needed.
 
 3. **Deployed Link**:
-   - Access the deployed application here: [Deployed App Link](#)
+   - Access the deployed application here: https://artworks-table.netlify.app/(#)
 
 ---
 
 ## Technologies Used
 
-- **React + Vite**
+- **React + Vite + TypeScript**
 - **PrimeReact**
 - **Tailwind CSS**
 - **Art Institute of Chicago API**
@@ -75,3 +75,5 @@ A dynamic React application showcasing paginated artwork data using PrimeReact a
 ```
 https://api.artic.edu/api/v1/artworks
 ```
+
+---
